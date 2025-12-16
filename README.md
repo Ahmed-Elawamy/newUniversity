@@ -1,10 +1,35 @@
-# React + Vite
+# 🎓 New University – Student Management Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Student Management Web Application** built using **React**.  
+The project is designed for educational and training purposes, focusing on clean UI, reusable components, and organized student data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Dashboard-React
-# university
+## 🚀 Features
+
+- 📋 Display a complete list of students  
+- 👤 Student profile information:
+  - Name
+  - Academic year
+  - Subjects
+  - GPA
+  - Attendance
+  - Skills
+- 🧩 Modular and reusable React components
+- 🎨 Clean and responsive UI
+- 📁 Well-structured project folders
+
+---
+
+## 🛠️ Built With
+
+- **React**
+- **JavaScript (ES6+)**
+- **CSS**
+- **Vite / npm**
+- **Git & GitHub**
+
+---
+
+## 📂 Project Structure
+
