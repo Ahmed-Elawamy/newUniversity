@@ -114,14 +114,16 @@ function Home() {
                                     xs: "center",
                                     md: "left",
                                     width: "450px",
+                                    position: "relative",
+                                    right: "37px",
                                 },
                             }}
                         >
                             <Typed
                                 strings={[
-                                    "New Assuit Technology University",
+                                    "Assuit Technology University",
                                     "Join Our Online Courses!",
-                                    "Achieve Your Goals with Us!",
+                                    "Achieve Your Goals!",
                                 ]}
                                 typeSpeed={60}
                                 backSpeed={30}

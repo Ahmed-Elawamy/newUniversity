@@ -86,16 +86,18 @@ export default function InfoTable({ std }) {
                         <StyledTableCell align="right">
                             {std.phone}
                         </StyledTableCell>
-                        <img
-                            src={std.image}
-                            alt=""
-                            style={{
-                                borderRadius: "50%",
-                                width: "51px",
-                                position: "absolute",
-                                right: "8px",
-                            }}
-                        />
+                        <StyledTableCell align="right">
+                            <img
+                                src={std.image}
+                                alt=""
+                                style={{
+                                    borderRadius: "50%",
+                                    width: "51px",
+                                    // position: "absolute",
+                                    // right: "8px",
+                                }}
+                            />
+                        </StyledTableCell>
                     </StyledTableRow>
                 </TableBody>
             </Table>
