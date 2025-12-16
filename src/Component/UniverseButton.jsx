@@ -1,112 +1,65 @@
-import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const UniverseButton = ({text, to, component, ...props}) => {
-    const ButtonContent = (
-        <>
-            {text}
-            <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
-                <path
-                    clipRule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                    fillRule="evenodd"
-                />
-            </svg>
-        </>
-    );
-
-    // Support both component prop and to prop
-    if (component === Link || to) {
-        return (
-            <StyledWrapper>
-                <Link to={to || "#"} className="button" {...props}>
-                    {ButtonContent}
-                </Link>
-            </StyledWrapper>
-        );
-    }
-
+const UniverseButton = () => {
     return (
         <StyledWrapper>
-            <button className="button" {...props}>
-                {ButtonContent}
+            <button>
+                <span className="text">Learn More</span>
             </button>
         </StyledWrapper>
     );
 };
 
 const StyledWrapper = styled.div`
-    .button {
-        position: relative;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-        padding-block: 0.5rem;
-        padding-inline: 1.25rem;
-        background-color: rgb(0 107 179);
-        border-radius: 9999px;
-        display: flex;
+    button {
         align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: #ffff;
-        gap: 10px;
-        font-weight: bold;
-        border: 3px solid #ffffff4d;
-        outline: none;
-        overflow: hidden;
-        font-size: 25px;
-        margin: 70px 0;
-        text-decoration: none;
-    }
-
-    .icon {
-        width: 24px;
-        height: 24px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .button:hover {
-        transform: scale(1.05);
-        border-color: #fff9;
-    }
-
-    .button:hover .icon {
-        transform: translate(4px);
-    }
-
-    .button:hover::before {
-        animation: shine 1.5s ease-out infinite;
-    }
-
-    .button::before {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 100%;
         background-image: linear-gradient(
-            120deg,
-            rgba(255, 255, 255, 0) 30%,
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0) 70%
+            144deg,
+            #af40ff,
+            #5b42f3 50%,
+            #00ddeb
         );
-        top: 0;
-        left: -100px;
-        opacity: 0.6;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+        box-sizing: border-box;
+        color: #ffffff;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        line-height: 1em;
+        max-width: 100%;
+        min-width: 140px;
+        padding: 3px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
     }
 
-    @keyframes shine {
-        0% {
-            left: -100px;
-        }
+    button:active,
+    button:hover {
+        outline: 0;
+    }
 
-        60% {
-            left: 100%;
-        }
+    button span {
+        background-color: rgb(5, 6, 45);
+        padding: 16px 24px;
+        border-radius: 6px;
+        width: 100%;
+        height: 100%;
+        transition: 300ms;
+    }
 
-        to {
-            left: 100%;
-        }
+    button:hover span {
+        background: none;
+    }
+
+    button:active {
+        transform: scale(0.9);
     }
 `;
 

@@ -1,30 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import InfoIcon from "@mui/icons-material/Info";
-/*
-<Link
-    to="/home"
-    style={navLinkStyle}
-    className="addHover"
->
-    Home
-</Link>
-<Link
-    to="/students"
-    style={navLinkStyle}
-    className="addHover"
->
-    Students
-</Link>
-<Link
-    to="/about"
-    style={navLinkStyle}
-    className="addHover"
->
-    About
-</Link>
-*/
 
 const UniverseNav = () => {
     return (

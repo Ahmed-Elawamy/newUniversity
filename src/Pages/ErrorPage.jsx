@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Container, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Home, ArrowBack } from "@mui/icons-material";
@@ -7,7 +6,8 @@ function ErrorPage() {
     return (
         <Box
             sx={{
-                bgcolor: "#1A3453",
+                background:
+                    "linear-gradient(-158deg, #af40ff, #5b42f3 50%, #00ddeb) !important",
                 minHeight: "100vh",
                 display: "flex",
                 alignItems: "center",
@@ -53,8 +53,8 @@ function ErrorPage() {
                             fontSize: "1.1rem",
                         }}
                     >
-                        The page you are looking for might have been removed, had its name changed,
-                        or is temporarily unavailable.
+                        The page you are looking for might have been removed,
+                        had its name changed, or is temporarily unavailable.
                     </Typography>
                     <Box
                         sx={{
